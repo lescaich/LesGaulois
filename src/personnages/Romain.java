@@ -14,4 +14,9 @@ public class Romain {
 		return nom;
 	}
 	
+	public void parler(String texte) {
+		String chaine = "Le romain " + nom + " : \" " + texte + " \". ";
+		System.out.println(chaine);
+	}
+	
 }
