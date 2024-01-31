@@ -19,4 +19,15 @@ public class Romain {
 		System.out.println(chaine);
 	}
 	
+	public void recevoirCoup(int forceCoup) {
+		force = force - forceCoup;
+		if (force <= 0) {
+			force = 0;
+			parler("J’abandonne… ");
+		}
+		else {
+			parler("Aïe ! ");
+		}
+	}
+	
 }
