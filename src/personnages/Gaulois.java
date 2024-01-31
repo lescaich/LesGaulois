@@ -18,4 +18,9 @@ public class Gaulois {
 		Gaulois asterix = new Gaulois("Astérix",8);
 		System.out.println(asterix.getNom());
 	}
+	
+	public void parler(String texte) {
+		String chaine = "Le gaulois " + nom + " : \" " + texte + " \". ";
+		System.out.println(chaine);
+	}
 }
