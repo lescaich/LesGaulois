@@ -23,4 +23,10 @@ public class Gaulois {
 		String chaine = "Le gaulois " + nom + " : \" " + texte + " \". ";
 		System.out.println(chaine);
 	}
+	
+	public void frapper(Romain romain) {
+		//String chaine = nom + " envoie un grand coup dans la mâchoire de " + romain.getNom();
+		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + romain.getNom());
+		romain.recevoirCoup(force/3);
+	}
 }
