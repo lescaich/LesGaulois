@@ -2,12 +2,12 @@ package personnages;
 
 public class Romain extends Personnage {
 	
-	public Romain() {
-		super(String nom, int force);
+	public Romain(String nom, int force) {
+		super(nom, force);
 	}
 	
 	@Override
 	protected String donnerAuteur() {
-		return ("");
+		return ("romain ");
 	}
 }

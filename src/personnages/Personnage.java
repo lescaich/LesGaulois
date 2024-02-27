@@ -16,14 +16,14 @@ public abstract class Personnage {
 	}
 
 	public void parler(String texte) {
-		String chaine = "Le romain " + nom + " : \" " + texte + " \". ";
+		String chaine = "Le " + this.donnerAuteur() + nom + " : \" " + texte + " \". ";
 		System.out.println(chaine);
 	}
 	
 	protected abstract String donnerAuteur();
 	
 	public void frapper(Personnage adversaire) {
-		System.out.println(nom + " envoie un grand coup dans la mâchoire de " + adversaire.getNom());
+		//System.out.println(nom + " envoie un grand coup dans la mâchoire de " + adversaire.getNom());
 		adversaire.recevoirCoup(force/3);
 	}
 	
