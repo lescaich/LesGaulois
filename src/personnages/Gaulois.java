@@ -3,7 +3,7 @@ package personnages;
 public class Gaulois extends Personnage {
 	
 	public Gaulois() {
-		super();
+		super(nom, force);
 	}
 	
 	@Override
