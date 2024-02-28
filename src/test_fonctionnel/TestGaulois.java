@@ -21,7 +21,7 @@ public class TestGaulois {
 			asterix.frapper(minus);
 			minus.frapper(asterix);
 		}
-		//System.out.println(7/3);
+		
 		
 	}
 	
