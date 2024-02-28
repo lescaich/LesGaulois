@@ -12,4 +12,8 @@ public class Village {
 		chef.parler("Je suis un grand guerrier et je vais créer mon village ");
 	}
 	
+	public Gaulois getChef() {
+		return chef;
+	}
+	
 }

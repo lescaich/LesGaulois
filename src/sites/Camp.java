@@ -11,5 +11,9 @@ public class Camp {
 		this.commandent = commandent;
 		commandent.parler("Je suis en charge de créer un nouveau camp romain ");
 	}
+
+	public Soldat getCommandent() {
+		return commandent;
+	}
 	
 }
