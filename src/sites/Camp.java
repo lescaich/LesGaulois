@@ -24,6 +24,7 @@ public class Camp {
 		for (int i=0; i < nbSoldats; i++) {
 			System.out.println(listeSoldats[i].getNom());
 		}
+		System.out.println(nbSoldats);
 	}
 
 	public void setListeSoldats(Soldat[] listeSoldats) {
