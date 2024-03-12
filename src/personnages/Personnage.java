@@ -33,10 +33,10 @@ public abstract class Personnage {
 		force -=  forceCoup;
 		if (force <= 0) {
 			force = 0;
-			parler("J’abandonne… ");
+			parler("J'abandonne... ");
 		}
 		else {
-			parler("Aïe ! ");
+			parler("AÃ¯e ! ");
 		}
 	}
 }

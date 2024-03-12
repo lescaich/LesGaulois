@@ -13,7 +13,7 @@ public class Camp {
 		this.commandent = commandent;
 		listeSoldats[0] = this.commandent;
 		nbSoldats++;
-		commandent.parler("Je suis en charge de créer un nouveau camp romain ");
+		commandent.parler("Je suis en charge de crÃ©er un nouveau camp romain ");
 	}
 
 	public Soldat getCommandent() {

@@ -9,7 +9,7 @@ public class Village {
 	public Village(Gaulois chef) {
 		super();
 		this.chef = chef;
-		chef.parler("Je suis un grand guerrier et je vais créer mon village ");
+		chef.parler("Je suis un grand guerrier et je vais crÃ©er mon village ");
 	}
 	
 	public Gaulois getChef() {
