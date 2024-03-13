@@ -42,12 +42,14 @@ public class Camp {
 			if (listeSoldats[i] == null) {
 				listeSoldats[i] = nouvSoldat;
 				isAjoute = true;
+				nouvSoldat.parler("Je mets mon épée au service de Rome dans le camp dirigé par " + commandent.getNom());
 				return isAjoute;
 			}
 			else {
 				isAjoute = false;
 			}
 		}
+		commandent.parler("Désolé " + nouvSoldat.getNom() + " notre camp est complet !");
 		return isAjoute;
 	}
 	

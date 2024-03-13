@@ -1,10 +1,12 @@
 package personnages;
 
 public class Soldat extends Romain {
-
-	public Soldat(String nom, int force) {
+	
+	private Grade grade;
+	
+	public Soldat(String nom, Grade grade, int force) {
 		super(nom, force);
-		
+		this.grade = grade;
 	}
 	
 }
