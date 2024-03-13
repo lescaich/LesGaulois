@@ -18,11 +18,12 @@ public class Village {
 		return chef;
 	}
 	
-	public void afficherListeVillageois() {
+	public void afficherVillageois() {
+		System.out.println("Le village de " + chef.getNom() + " est habité par : ");
 		for (int i=0; i < listeGaulois.length; i++) {
 			Gaulois gaulois = listeGaulois[i];
-			if (gaulois != null) {
-				System.out.println(gaulois.getNom());
+			if (gaulois != null && gaulois != chef) {
+				System.out.println("- " + gaulois.getNom());
 			}
 		}
 	}

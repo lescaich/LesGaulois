@@ -5,7 +5,7 @@ import personnages.Soldat;
 public class Camp {
 	
 	private Soldat commandent;
-	private Soldat[] listeSoldats = new Soldat[4];
+	private Soldat[] listeSoldats = new Soldat[5];
 	
 	public Camp(Soldat commandent) {
 		super();
@@ -21,11 +21,12 @@ public class Camp {
 		return commandent;
 	}
 	
-	public void afficherListeSoldats() {
+	public void afficherCamp() {
+		System.out.println("Le camp dirigé par " + commandent.getNom() + " contient les soldats : ");
 		for (int i=0; i < listeSoldats.length; i++) {
 			Soldat soldat = listeSoldats[i];
-			if (soldat != null) {
-				System.out.println(soldat.getNom());
+			if (soldat != null && soldat != commandent) {
+				System.out.println("- " + soldat.getNom());
 			}
 		}
 		//System.out.println(listeSoldats.length);

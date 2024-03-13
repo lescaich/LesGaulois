@@ -42,6 +42,11 @@ public class TestSites {
 		village1.ajouterVillageois(obelix);
 		village1.ajouterVillageois(prolix);
 		
+		System.out.println();
+		
+		village1.afficherVillageois();
+		camp1.afficherCamp();
+		
 	}
 	
 }
