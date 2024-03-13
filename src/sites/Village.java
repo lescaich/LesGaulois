@@ -45,4 +45,16 @@ public class Village {
 		return isAjoute;
 	}
 	
+	public boolean changerChef(Gaulois nouvChef) {
+		boolean isChange = false;
+		if (nouvChef != chef) {
+			chef.parler("Je laisse mon grand bouclier au grand " + nouvChef.getNom());
+			listeGaulois[0] = nouvChef;
+			chef = nouvChef;
+			isChange = true;
+			chef.parler("Merci !");
+		}
+		return isChange;
+	}
+	
 }

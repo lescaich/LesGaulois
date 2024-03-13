@@ -19,16 +19,23 @@ public class TestSites {
 		Gaulois asterix = new Gaulois("Astérix", 5);
 		Gaulois obelix = new Gaulois("Obélix", 15);
 		Gaulois prolix = new Gaulois("Prolix", 2);
+		Gaulois abraracourcix = new Gaulois("Abraracourcix", 5);
 		
 		Soldat brutus = new Soldat("Brutus", Grade.CENTURION, 5);
 		Soldat milexcus = new Soldat("Milexcus", Grade.SOLDAT, 2);
 		Soldat tulliusOctopus = new Soldat("Tullius Octopus", Grade.TESSERARIUS, 2);
 		Soldat ballondebaudrus = new Soldat("Ballondebaudrus", Grade.OPTIO, 3);
+		Soldat briseradius = new Soldat("Briseradius", Grade.SOLDAT, 4);
+		Soldat chorus = new Soldat("Chorus", Grade.CENTURION, 4);
 		
 		// Création des sites
 		Village village1 = new Village(vercingetorix);
 		Camp camp1 = new Camp(minus);
 		
+		
+		// Test des méthodes
+		
+		// Test ajouterSoldat ajouterVillageois
 		System.out.println();
 		
 		camp1.ajouterSoldat(brutus);
@@ -42,10 +49,19 @@ public class TestSites {
 		village1.ajouterVillageois(obelix);
 		village1.ajouterVillageois(prolix);
 		
+		// Test afficherVillageois afficherCamp
 		System.out.println();
 		
 		village1.afficherVillageois();
 		camp1.afficherCamp();
+		
+		// Test changerChef changerCommandent
+		System.out.println();
+		
+		village1.changerChef(abraracourcix);
+		System.out.println();
+		camp1.changerCommandent(briseradius);
+		camp1.changerCommandent(chorus);
 		
 	}
 	

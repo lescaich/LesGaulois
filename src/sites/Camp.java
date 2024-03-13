@@ -1,5 +1,6 @@
 package sites;
 
+import personnages.Grade;
 import personnages.Soldat;
 
 public class Camp {
@@ -52,6 +53,22 @@ public class Camp {
 		}
 		commandent.parler("Désolé " + nouvSoldat.getNom() + " notre camp est complet !");
 		return isAjoute;
+	}
+	
+	public boolean changerCommandent(Soldat nouvCommandent) {
+		boolean isChange = false;
+		if (nouvCommandent != commandent) {
+			if (nouvCommandent.getGrade() == Grade.CENTURION) {
+				listeSoldats[0] = nouvCommandent;
+				commandent = nouvCommandent;
+				isChange = true;
+				commandent.parler("Moi " + commandent.getNom() + " je prends la direction du camp romain.");
+			}
+			else {
+				nouvCommandent.parler("Je ne suis pas suffisamment gradé pour prendre la direction du camp romain.");
+			}
+		}
+		return isChange;
 	}
 	
 }
