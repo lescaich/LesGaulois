@@ -5,14 +5,15 @@ import personnages.Soldat;
 public class Camp {
 	
 	private Soldat commandent;
-	private int nbSoldats = 0;
 	private Soldat[] listeSoldats = new Soldat[4];
 	
 	public Camp(Soldat commandent) {
 		super();
 		this.commandent = commandent;
+		/*for (int i=0; i < listeSoldats.length; i++) {
+			listeSoldats[i] = null;
+		}*/
 		listeSoldats[0] = this.commandent;
-		nbSoldats++;
 		commandent.parler("Je suis en charge de créer un nouveau camp romain ");
 	}
 
@@ -21,23 +22,30 @@ public class Camp {
 	}
 	
 	public void afficherListeSoldats() {
-		for (int i=0; i < nbSoldats; i++) {
-			System.out.println(listeSoldats[i].getNom());
+		for (int i=0; i < listeSoldats.length; i++) {
+			Soldat soldat = listeSoldats[i];
+			if (soldat != null) {
+				System.out.println(soldat.getNom());
+			}
 		}
-		System.out.println(nbSoldats);
+		//System.out.println(listeSoldats.length);
 	}
 
 	public void setListeSoldats(Soldat[] listeSoldats) {
 		this.listeSoldats = listeSoldats;
 	}
 
-	public boolean ajouterSoldat(Soldat soldat) {
+	public boolean ajouterSoldat(Soldat nouvSoldat) {
 		boolean isAjoute = false;
-		for (int i=0; i < nbSoldats; i++) {
+		for (int i=0; i < listeSoldats.length; i++) {
+			//Soldat soldat = listeSoldats[i];
 			if (listeSoldats[i] == null) {
-				listeSoldats[i] = soldat;
-				nbSoldats++;
+				listeSoldats[i] = nouvSoldat;
 				isAjoute = true;
+				return isAjoute;
+			}
+			else {
+				isAjoute = false;
 			}
 		}
 		return isAjoute;

@@ -14,17 +14,23 @@ public class TestSites {
 		Soldat minus = new Soldat("Minus",2);
 		
 		Soldat brutus = new Soldat("Brutus",5);
+		Soldat milexcus = new Soldat("Milexcus",2);
+		Soldat tullius_octopus = new Soldat("Tullius Octopus",2);
 		
 		// Création des sites
 		Village village1 = new Village(vercingetorix);
 		Camp camp1 = new Camp(minus);
 		
 		camp1.afficherListeSoldats();
+		System.out.println();
 		camp1.ajouterSoldat(brutus);
 		camp1.afficherListeSoldats();
-		
-		System.out.println(minus.getNom());
-		System.out.println(brutus.getNom());
+		System.out.println();
+		camp1.ajouterSoldat(milexcus);
+		camp1.afficherListeSoldats();
+		System.out.println();
+		camp1.ajouterSoldat(tullius_octopus);
+		camp1.afficherListeSoldats();
 		
 	}
 	
