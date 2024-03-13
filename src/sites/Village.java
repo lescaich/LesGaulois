@@ -5,7 +5,7 @@ import personnages.Gaulois;
 public class Village {
 	
 	private Gaulois chef;
-	private Gaulois[] listeGaulois = new Gaulois[5];
+	private Gaulois[] listeGaulois = new Gaulois[50];
 	
 	public Village(Gaulois chef) {
 		super();

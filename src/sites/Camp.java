@@ -6,7 +6,7 @@ import personnages.Soldat;
 public class Camp {
 	
 	private Soldat commandent;
-	private Soldat[] listeSoldats = new Soldat[5];
+	private Soldat[] listeSoldats = new Soldat[80];
 	
 	public Camp(Soldat commandent) {
 		super();
