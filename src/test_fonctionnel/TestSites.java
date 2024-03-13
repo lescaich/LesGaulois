@@ -11,12 +11,18 @@ public class TestSites {
 	public static void main(String[] args) {
 		
 		// Création des personnages 
-		Gaulois vercingetorix = new Gaulois("Vercingétorix",5);
+		Gaulois vercingetorix = new Gaulois("Vercingétorix", 5);
 		Soldat minus = new Soldat("Minus", Grade.CENTURION, 2);
+		
+		Gaulois agecanonix = new Gaulois("Agecanonix", 1);
+		Gaulois assurancetourix = new Gaulois("Assurancetourix", 2);
+		Gaulois asterix = new Gaulois("Astérix", 5);
+		Gaulois obelix = new Gaulois("Obélix", 15);
+		Gaulois prolix = new Gaulois("Prolix", 2);
 		
 		Soldat brutus = new Soldat("Brutus", Grade.CENTURION, 5);
 		Soldat milexcus = new Soldat("Milexcus", Grade.SOLDAT, 2);
-		Soldat tullius_octopus = new Soldat("Tullius Octopus", Grade.TESSERARIUS, 2);
+		Soldat tulliusOctopus = new Soldat("Tullius Octopus", Grade.TESSERARIUS, 2);
 		Soldat ballondebaudrus = new Soldat("Ballondebaudrus", Grade.OPTIO, 3);
 		
 		// Création des sites
@@ -27,8 +33,14 @@ public class TestSites {
 		
 		camp1.ajouterSoldat(brutus);
 		camp1.ajouterSoldat(milexcus);
-		camp1.ajouterSoldat(tullius_octopus);
+		camp1.ajouterSoldat(tulliusOctopus);
 		camp1.ajouterSoldat(ballondebaudrus);
+		
+		village1.ajouterVillageois(agecanonix);
+		village1.ajouterVillageois(assurancetourix);
+		village1.ajouterVillageois(asterix);
+		village1.ajouterVillageois(obelix);
+		village1.ajouterVillageois(prolix);
 		
 	}
 	
