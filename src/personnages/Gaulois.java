@@ -1,8 +1,8 @@
 package personnages;
 
 public class Gaulois {
-	String nom;
-	int force;
+	private String nom;
+	private int force;
 	
 	public Gaulois(String nom, int force) {
 		this.nom = nom;
