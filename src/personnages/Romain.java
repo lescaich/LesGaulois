@@ -16,4 +16,15 @@ public class Romain {
 	public void parler(String texte) {
 		System.out.println("Le romain " + nom + " : \" " + texte + " \". ");
 	}
+	
+	public void recevoirCoup(int forceCoup) {
+		force -= forceCoup;
+		if (force > 0) {
+			parler("Aïe !");
+		}
+		else {
+			force = 0;
+			parler("J'abandonne...");
+		}
+	}
 }
