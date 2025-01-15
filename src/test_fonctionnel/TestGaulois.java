@@ -7,5 +7,6 @@ public class TestGaulois {
 		
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		System.out.println(asterix.getNom());
+		asterix.parler("Bonjour à tous");
 	}
 }
